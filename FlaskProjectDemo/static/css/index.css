@@ -1,0 +1,139 @@
+:root{
+  --primary:#1e4bb8;
+  --dark:#111827;
+  --light:#f3f6fb;
+  --text:#374151;
+}
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--light);
+}
+
+/* HEADER */
+header{
+  background:var(--primary);
+  color:white;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+header h2{margin:0;}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:40px;
+  font-weight:bold;
+}
+nav a:hover{opacity:.7}
+
+header img{
+  width:80px;
+  height:auto;
+}
+
+header h2{
+  margin:0;
+  font-size:32px;
+  font-weight:800;
+}
+
+/* HERO */
+.hero{
+  padding:90px 20px;
+  text-align:center;
+  background:linear-gradient(to right, #d6e2ff, #f3f9ff);
+}
+.hero h1{
+  font-size:60px;
+  margin:0;
+  color:var(--dark);
+}
+.hero p{
+  font-size:18px;
+  color:var(--text);
+  max-width:600px;
+  margin:auto;
+  margin-top:10px;
+}
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 22px;
+  background:var(--primary);
+  color:white;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:16px;
+  transition:.3s;
+}
+.btn:hover{
+  background:#163a99;
+}
+
+/* FEATURES */
+.features{
+  max-width:1000px;
+  margin:auto;
+  padding:60px 20px;
+  text-align:center;
+}
+.features h2{margin-bottom:30px;}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.card{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.07);
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* STATS */
+.stats{
+  text-align:center;
+  background:white;
+  padding:50px;
+}
+.stat-box{
+  display:flex;
+  justify-content:center;
+  gap:50px;
+}
+.stat{
+  font-size:22px;
+  font-weight:bold;
+  color:var(--primary);
+}
+
+/* TESTIMONIAL */
+.testimonial{
+  max-width:800px;
+  margin:auto;
+  padding:50px 20px;
+  font-style:italic;
+  color:var(--text);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:14px;
+  background:var(--primary);
+  color:white;
+  margin-top:20px;
+}
+
+/* RESPONSIVE */
+@media (max-width:600px){
+  .stat-box{flex-direction:column;}
+}
